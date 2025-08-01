@@ -1,7 +1,8 @@
 import { Module } from "@nestjs/common";
 import { PassportModule } from "@nestjs/passport";
 import { FirebaseAuthStrategy } from "./auth.strategy";
-import { ConfigModule } from "@swiggy/config";
+import { ConfigModule } from "@nestjs/config";
+
 @Module({
   imports: [
     ConfigModule,
